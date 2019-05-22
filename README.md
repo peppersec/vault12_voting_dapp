@@ -1,8 +1,8 @@
 Smart contracts:
 1. git clone the repo
 2. install mongodb (mac `brew install mongodb`)
-3. `cd contracts_and_scraper/scraper`
-4. `yarn`
+3. `cd contracts_and_scraper`
+4. `yarn && cd contracts_and_scraper/scraper && yarn`
 4. `./setupMongo.sh`
 5. set .env (`cp .env.example .env`)
     * TOKEN_ADDRESS
@@ -14,7 +14,6 @@ Smart contracts:
 8. `node merkleTreeGenerator.js`
 9. save merkle root hash and ipfs file hash
 10. cd ../ # should be in `contracts_and_scraper` folder
-11. `yarn`
 12. `yarn compile`
 13. `yarn test`
 14. `yarn flat`
