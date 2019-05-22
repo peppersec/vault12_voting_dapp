@@ -1,3 +1,5 @@
+# Installation
+
 Smart contracts:
 1. git clone the repo
 2. install mongodb (mac `brew install mongodb`)
