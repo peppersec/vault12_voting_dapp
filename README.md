@@ -34,10 +34,10 @@ block number at which the contract was deployed
 UI
 1. `cd ../front`
 2. `yarn` - installs deps
-3. paste `participants.json` to `static` from `contracts_and_scraper/scraper` folder
+3. `cp ../contracts_and_scraper/scraper/participants.json static/`
 4. change `networkConfig.json`
     * votingContractAddress - deployed contract address
     * deployedBlockNumber - Voting contract deployment block
     * snaphotBlock - TO_BLOCK that you used when building the token's holders cap table
 5. Change `YOUR_DOMAIN_NAME` in `package.json` file for `deploy-prod` command
-5. `yarn deploy-prod`
+6. `yarn deploy-prod`
