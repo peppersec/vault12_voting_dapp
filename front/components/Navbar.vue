@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns is-gapless is-vcentered">
         <div class="is-one-quater navbar-brand">
-          <a href="#" class="navbar-item logo top">
+          <a href="https://vault12.com" class="navbar-item logo top">
             <img src="~/assets/img/logo-top@2x.png" alt="Vault12" />
           </a>
           <div
