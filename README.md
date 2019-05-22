@@ -40,4 +40,5 @@ UI
     * deployedBlockNumber - Voting contract deployment block
     * snaphotBlock - TO_BLOCK that you used when building the token's holders cap table
 5. Change `YOUR_DOMAIN_NAME` in `package.json` file for `deploy-prod` command
-6. `yarn deploy-prod`
+6. `git commit -am "ballot info"`
+7. `yarn deploy-prod`

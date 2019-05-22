@@ -5,7 +5,7 @@
       <div class="level">
         <div class="level-left">
           <p class="level-item">
-            Voting DApp v1.03 © 2019 Vault12. All Rights Reserved, Vault12 Inc.
+            Voting DApp v1.04 © 2019 Vault12. All Rights Reserved, Vault12 Inc.
           </p>
         </div>
         <div class="level-right">
