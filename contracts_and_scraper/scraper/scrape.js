@@ -88,6 +88,14 @@ async function addExtra() {
       {
         address: '0xC8c30Fa803833dD1Fd6DBCDd91Ed0b301EFf87cF',
         value: toWei('4500000')
+      },
+      {
+        address: '0x7725d1FE8Bb1537117cb7289Ba24D7EBCfc594D8',
+        value: toWei('1370004')
+      },
+      {
+        address: '0x33471b4544ef94524318420ea1a2089bB634bf79',
+        value: toWei('6779561')
       }
     ]
     for(let i = 0; i < extra.length; i++) {
@@ -107,7 +115,7 @@ async function addExtra() {
 async function run() {
   await main()
   // only for testing we can add some extra addresses
-  // await addExtra()
+  await addExtra()
 }
 
 run()
