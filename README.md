@@ -1,10 +1,10 @@
 Smart contracts:
 1. git clone the repo
 2. install mongodb (mac `brew install mongodb`)
-3. cd `contracts_and_scraper/scraper`
+3. `cd contracts_and_scraper/scraper`
 4. `yarn`
 4. `./setupMongo.sh`
-5. set .env
+5. set .env (`cp .env.example .env`)
     * TOKEN_ADDRESS
     * FROM_BLOCK
     * TO_BLOCK
