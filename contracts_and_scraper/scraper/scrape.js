@@ -1,4 +1,5 @@
 require('dotenv').config()
+const fs = require('fs');
 let {
     RPC_URL,
     TOKEN_ADDRESS,
@@ -59,12 +60,31 @@ async function main() {
     await dbConnection.collection(`ethAddressesWithBalance${NET_ID}`).insertMany(prepareArray)
     total = total.div(BN(10).pow(TOKEN_DECIMALS))
     console.log('Total holders:', prepareArray.length, 'Total balance', total.toFormat())
+    await createFile({dbConnection})
     await client.close()
     resolve()
 
   })
 
 }
+
+function createFile({ dbConnection }) {
+  return new Promise(async (resolve, reject) => {
+    let participants = await dbConnection.collection(`ethAddressesWithBalance${NET_ID}`)
+      .find()
+      .project({ _id: 0, ethAccount: 1, value: 1 })
+      .toArray();
+    participants = participants.reduce((accum, { ethAccount, value }) => {
+      accum[ethAccount] = value;
+      return accum
+    }, {})
+    participants = JSON.stringify(participants, null, 2);
+    fs.writeFileSync('participants.json', participants)
+    console.log('participants.json file has been created as well');
+    resolve()
+  })
+}
+
 
 async function addExtra() {
   return new Promise(async (resolve, reject) => {
