@@ -115,7 +115,7 @@ async function addExtra() {
 async function run() {
   await main()
   // only for testing we can add some extra addresses
-  await addExtra()
+  // await addExtra()
 }
 
 run()
