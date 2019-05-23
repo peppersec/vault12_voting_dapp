@@ -392,7 +392,7 @@ export default {
         {
           vgt: 'Used by company for fundraising',
           vgu:
-            'Not offered by Company for sale and not used by the Company for fundraising. Only VGT investors can convert some of their VGT tokens into VGU and subsequently put VGU on the exchanges. Company is not o!ering VGU for sale, nor profits from VGU sales by investors'
+            'Not offered by Company for sale and not used by the Company for fundraising. Only VGT investors can convert some of their VGT tokens into VGU and subsequently put VGU on the exchanges. Company is not offering VGU for sale, nor profits from VGU sales by investors'
         },
         {
           vgt: 'Can be used as investment instrument, unlimited buy/sell capability',
