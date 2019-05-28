@@ -196,15 +196,12 @@
             No change
           </h2>
           <h3 class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            This vote means the community prefers to keep VGT tokens to the exact policy described in
+            our white paper.
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            International customers will be able to buy/sell tokens with minimal complications, yet in the US sales of VGT Tokens will be restricted to US-accredited investors only (same as the STO). 
+            The VGT tokens will only be listed on security-token compliant exchanges. In practice, this means the exclusion of the US market from Vault12 products powered by the VGT token.
           </p>
         </div>
       </div>
@@ -220,11 +217,11 @@
           </h3>
           <p>
             Providing end users with tokens will be heavily restricted as long as tokens remain
-            categorized as security. The task of categorizing VGT as a utility might take years and
+            categorized as a security. The task of categorizing VGT as a utility might take years and
             may depend on regulations that are not yet issued.
           </p>
           <p>
-            Instead, we can cleanly separate role of the token as fundraising instrument (an
+            Instead, we can cleanly separate the role of the token as a fundraising instrument (an
             activity which is now in the past and completed via the original VGT token) and create a
             utility token as an application resource bought by users to access the platform. VGT
             will remain the original security token that will keep all original functions. VGT will
@@ -294,15 +291,15 @@
             of the product.
           </p>
           <p>
-            Instead, we can make platform accept widely available Ethereum (and other
+            Instead, we can make the platform accept widely available Ethereum (and other
             cryptocurrencies at a later date) and keep the original VGT token as registration of
             commercial rights on the platform. This way millions of Ethereum users can immediately
-            use Vault12 platform with no extra steps such as buying tokens on exchanges. At the same
+            use the Vault12 platform with no extra steps such as buying tokens on exchanges. At the same
             time, VGT tokens become valuable since ownership entitles holders to automatically
             receive a piece of each transaction that takes place on the platform.
           </p>
           <p>
-            As you might recall from our white paper, Vault12 platform will be powered by following
+            As you might recall from our white paper, the Vault12 platform will be powered by following
             three transaction groups:
           </p>
         </div>
@@ -349,15 +346,15 @@
             <li>Any Ethereum owner will be able to use the Vault12 application immediately.</li>
             <li>
               Ownership of VGT tokens will become an instrument to receive a steady flow of Ethereum
-              (and at later date,potentially, other compatible cryptocurrencies) proportional to
-              transaction volume taking place on the platform.
+              (and at later date, potentially, other compatible cryptocurrencies) proportional to
+              the transaction volume taking place on the platform.
             </li>
             <li>
-              At the moment, external owners control ~82% of all outstanding VGT tokens and
-              therefore will receive 82% of ETH balance received in transaction splits.
+              At the moment, external owners control ~82% of all unlocked VGT tokens and
+              therefore will receive 82% of the ETH balance received in transaction splits.
             </li>
             <li>
-              VGT token will be tradable only on security exchanges. US residents who wish to buy
+              VGT tokens will be tradable only on security exchanges. US residents who wish to buy
               VGT tokens will have to remain compliant with KYC/accreditation regulations.
             </li>
           </ul>
