@@ -282,6 +282,15 @@
               VGT tokens will have to remain compliant with KYC/accreditation regulations.
             </li>
           </ul>
+          <br />
+          <a
+            class="proposal"
+            alt="Link to Vote Announcement Post"
+            target="_blank"
+            href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4"
+          >
+            Read Full Proposal
+          </a>
         </div>
         <div class="column">
           <scheme />
@@ -314,6 +323,14 @@
               by the VGT token.
             </b>
           </p>
+          <a
+            class="proposal"
+            alt="Link to Vote Announcement Post"
+            target="_blank"
+            href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4"
+          >
+            Read Full Proposal
+          </a>
         </div>
       </div>
     </section>
@@ -340,6 +357,15 @@
             Guardian Utility token. VGU can be created by one and only one method: A one-way burn of
             one VGT token into one VGU token.
           </p>
+          <br />
+          <a
+            class="proposal"
+            alt="Link to Vote Announcement Post"
+            target="_blank"
+            href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4"
+          >
+            Read Full Proposal
+          </a>
         </div>
         <div class="column">
           <img
