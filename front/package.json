@@ -1,8 +1,8 @@
 {
-  "name": "Vault12 Platform Vote",
+  "name": "Vault12-Platform-Vote",
   "version": "1.0.0",
   "description": " ",
-  "author": "peppersec.com",
+  "author": "Vault12, Inc.",
   "private": true,
   "scripts": {
     "dev": "nuxt",

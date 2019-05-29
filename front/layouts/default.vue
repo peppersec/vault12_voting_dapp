@@ -27,7 +27,7 @@ export default {
       console.log(e)
       this.$snackbar.open({
         duration: 5000,
-        message: 'Please use metamask.io or TrustWallet',
+        message: 'Please use MetaMask to vote!',
         type: 'is-danger',
         position: 'is-top',
         indefinite: true,

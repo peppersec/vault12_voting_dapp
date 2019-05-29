@@ -8,8 +8,12 @@
             It has been well over a year since we published the Vault12 white paper and shared our
             vision of a distributed secretkeeping platform to secure our most valuable crypto assets
             and most critical documents. Security tokens were in their infancy, and there was little
-            guidance on how security tokens could operate in distributed software platforms. 
-            <a alt="Link to Vote Announcement Post" target="_blank" href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4">
+            guidance on how security tokens could operate in distributed software platforms.
+            <a
+              alt="Link to Vote Announcement Post"
+              target="_blank"
+              href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4"
+            >
               Read our full announcement regarding this vote.
             </a>
           </p>
@@ -20,7 +24,7 @@
             class="chevron"
             rounded
           >
-            Place Vote Now
+            Vote Now!
           </b-button>
         </div>
         <div class="column">
@@ -34,7 +38,7 @@
                 Active ballot for:
               </div>
               <div class="voting-value">
-                Future token structure
+                Vault Guardian Token
               </div>
             </div>
             <div class="voting-line bottom"></div>
@@ -54,6 +58,39 @@
       <div class="columns">
         <div class="column">
           <div class="vote-icon">
+            <img src="~/assets/img/vote-transaction-split.svg" alt="" />
+          </div>
+          <h4>
+            Transaction Split
+          </h4>
+          <p>
+            Switches VGT token from application currency to security.
+            <b>
+              <a
+                alt="Vault12 Policy Proposal"
+                target="_blank"
+                href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4"
+              >
+                Vault12 recomendation!
+              </a>
+            </b>
+          </p>
+          <br />
+          <b-button
+            v-if="canVote"
+            type="is-primary"
+            size="is-medium"
+            class="chevron"
+            :disabled="isError"
+            rounded
+            @click="vote({ votingOption: 3 })"
+          >
+            Vote for “Transaction Split”
+          </b-button>
+          <a v-scroll-to="'.split'" href="#" class="link">Read more</a>
+        </div>
+        <div class="column">
+          <div class="vote-icon">
             <img
               src="~/assets/img/vote-no-change.png"
               srcset="~/assets/img/vote-no-change@2x.png 2x, ~/assets/img/vote-no-change@3x.png 3x"
@@ -64,9 +101,9 @@
             No Change
           </h4>
           <p>
-            This vote means the community prefers to keep VGT tokens to the exact policy described in
-            our white paper
+            Community prefers to keep VGT tokens to the exact policy described in our white paper.
           </p>
+          <br />
           <b-button
             v-if="canVote"
             type="is-primary"
@@ -89,8 +126,9 @@
           </h4>
           <p>
             This proposal constructs a new token specifically designed and categorized as a utility
-            token and would
+            token.
           </p>
+          <br />
           <b-button
             v-if="canVote"
             type="is-primary"
@@ -103,30 +141,6 @@
             Vote for “Dual Token”
           </b-button>
           <a v-scroll-to="'.structure'" href="#" class="link">Read more</a>
-        </div>
-        <div class="column">
-          <div class="vote-icon">
-            <img src="~/assets/img/vote-transaction-split.svg" alt="" />
-          </div>
-          <h4>
-            Transaction Split
-          </h4>
-          <p>
-            This proposal leverages the security basis of the VGT token, and switches its function
-            from application currency
-          </p>
-          <b-button
-            v-if="canVote"
-            type="is-primary"
-            size="is-medium"
-            class="chevron"
-            :disabled="isError"
-            rounded
-            @click="vote({ votingOption: 3 })"
-          >
-            Vote for “Transaction Split”
-          </b-button>
-          <a v-scroll-to="'.split'" href="#" class="link">Read more</a>
         </div>
       </div>
 
@@ -185,87 +199,6 @@
     <b-message type="is-warning" :active.sync="isError">
       {{ errorMessage }}
     </b-message>
-    <section class="section no-change">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <img
-            src="~/assets/img/no-change.png"
-            srcset="~/assets/img/no-change@2x.png 2x, ~/assets/img/no-change@3x.png 3x"
-            alt=""
-          />
-        </div>
-        <div class="column">
-          <h2 class="title">
-            No Change
-          </h2>
-          <h3 class="subtitle">
-            This vote means the community prefers to keep VGT tokens to the exact policy described in
-            our white paper.
-          </h3>
-          <p>
-            International customers will be able to buy/sell tokens with minimal complications, yet in the US sales of VGT Tokens will be restricted to US-accredited investors only (same as the STO). 
-            The VGT tokens will only be listed on security-token compliant exchanges. In practice, this means the exclusion of the US market from Vault12 products powered by the VGT token.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section structure">
-      <div class="columns is-vcentered mobile-reverse">
-        <div class="column">
-          <h2 class="title">
-            Dual Token Structure
-          </h2>
-          <h3 class="subtitle">
-            Make distribution of application tokens as easy as possible
-          </h3>
-          <p>
-            Providing end users with tokens will be heavily restricted as long as tokens remain
-            categorized as a security. The task of categorizing VGT as a utility might take years and
-            may depend on regulations that are not yet issued.
-          </p>
-          <p>
-            Instead, we can cleanly separate the role of the token as a fundraising instrument (an
-            activity which is now in the past and completed via the original VGT token) and create a
-            utility token as an application resource bought by users to access the platform. VGT
-            will remain the original security token that will keep all original functions. VGT will
-            get one new additional function: it can be used for one-way burn into VGU: Vault
-            Guardian Utility token. VGU can be created by one and only one method: A one-way burn of
-            one VGT token into one VGU token.
-          </p>
-        </div>
-        <div class="column">
-          <img
-            src="~/assets/img/dual-token-structure.png"
-            srcset="
-              ~/assets/img/dual-token-structure@2x.png 2x,
-              ~/assets/img/dual-token-structure@3x.png 3x
-            "
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="pattern"></div>
-      <div class="v-table">
-        <div class="v-table__item v-table__item--header">
-          <div class="v-table__cell v-table__cell--vgt v-table__cell--header">
-            VGT Security
-          </div>
-          <div class="v-table__cell v-table__cell--vgu v-table__cell--header">
-            VGU Utility
-          </div>
-        </div>
-        <div v-for="(item, index) in dualTokenTable" :key="index" class="v-table__item">
-          <div class="v-table__cell v-table__cell--vgt">
-            <div class="v-table__help-name">VGT Security</div>
-            {{ item.vgt }}
-          </div>
-          <div class="v-table__cell v-table__cell--vgu">
-            <div class="v-table__help-name">VGU Utility</div>
-            {{ item.vgu }}
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="section split">
       <div class="columns is-vcentered">
         <div class="column">
@@ -286,24 +219,16 @@
             Make ease of use of the application as simple as possible
           </h3>
           <p>
-            The Dual token approach solves the issue of wide distribution of our token on utility
-            exchanges but introduces an extra layer of complexity for the application usage. Now
-            users need to understand the concept of two separate yet related tokens and figure out
-            the correct exchange to buy the correct token they need for actual usage. That level of
-            complexity might be too hard for the average user and might lead to decreased adoption
-            of the product.
+            We can make the platform accept widely available Ethereum (and other cryptocurrencies at
+            a later date) and keep the original VGT token as a registration of commercial rights on
+            the platform. This way millions of Ethereum users can immediately use the Vault12
+            platform with no extra steps such as buying tokens on exchanges. At the same time, VGT
+            tokens become valuable since ownership entitles holders to automatically receive a piece
+            of each transaction that takes place on the platform.
           </p>
           <p>
-            Instead, we can make the platform accept widely available Ethereum (and other
-            cryptocurrencies at a later date) and keep the original VGT token as a registration of
-            commercial rights on the platform. This way millions of Ethereum users can immediately
-            use the Vault12 platform with no extra steps such as buying tokens on exchanges. At the same
-            time, VGT tokens become valuable since ownership entitles holders to automatically
-            receive a piece of each transaction that takes place on the platform.
-          </p>
-          <p>
-            As you might recall from our white paper, the Vault12 platform will be powered by following
-            three transaction groups:
+            As you might recall from our white paper, the Vault12 platform will be powered by
+            following three transaction groups:
           </p>
         </div>
       </div>
@@ -353,10 +278,6 @@
               the transaction volume taking place on the platform.
             </li>
             <li>
-              At the moment, external owners control ~82% of all unlocked VGT tokens and
-              therefore will receive 82% of the ETH balance received in transaction splits.
-            </li>
-            <li>
               VGT tokens will be tradable only on security exchanges. US residents who wish to buy
               VGT tokens will have to remain compliant with KYC/accreditation regulations.
             </li>
@@ -364,6 +285,92 @@
         </div>
         <div class="column">
           <scheme />
+        </div>
+      </div>
+    </section>
+    <section class="section no-change">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <img
+            src="~/assets/img/no-change.png"
+            srcset="~/assets/img/no-change@2x.png 2x, ~/assets/img/no-change@3x.png 3x"
+            alt=""
+          />
+        </div>
+        <div class="column">
+          <h2 class="title">
+            No Change
+          </h2>
+          <h3 class="subtitle">
+            This vote means the community prefers to keep VGT tokens to the exact policy described
+            in our white paper.
+          </h3>
+          <p>
+            International customers will be able to buy/sell tokens with minimal complications, yet
+            in the US sales of VGT Tokens will be restricted to US-accredited investors only (same
+            as the STO). The VGT tokens will only be listed on security-token compliant exchanges.
+            <b>
+              In practice, this means the exclusion of the US market from Vault12 products powered
+              by the VGT token.
+            </b>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section structure">
+      <div class="columns is-vcentered mobile-reverse">
+        <div class="column">
+          <h2 class="title">
+            Dual Token Structure
+          </h2>
+          <h3 class="subtitle">
+            Make distribution of application tokens as easy as possible
+          </h3>
+          <p>
+            Providing end users with tokens will be heavily restricted as long as tokens remain
+            categorized as a security. The task of categorizing VGT as a utility might take years
+            and may depend on regulations that are not yet issued.
+          </p>
+          <p>
+            Instead, we can cleanly separate the role of the token as a fundraising instrument (an
+            activity which is now in the past and completed via the original VGT token) and create a
+            utility token as an application resource bought by users to access the platform. VGT
+            will remain the original security token that will keep all original functions. VGT will
+            get one new additional function: it can be used for one-way burn into VGU: Vault
+            Guardian Utility token. VGU can be created by one and only one method: A one-way burn of
+            one VGT token into one VGU token.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            src="~/assets/img/dual-token-structure.png"
+            srcset="
+              ~/assets/img/dual-token-structure@2x.png 2x,
+              ~/assets/img/dual-token-structure@3x.png 3x
+            "
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="pattern"></div>
+      <div class="v-table">
+        <div class="v-table__item v-table__item--header">
+          <div class="v-table__cell v-table__cell--vgt v-table__cell--header">
+            VGT Security
+          </div>
+          <div class="v-table__cell v-table__cell--vgu v-table__cell--header">
+            VGU Utility
+          </div>
+        </div>
+        <div v-for="(item, index) in dualTokenTable" :key="index" class="v-table__item">
+          <div class="v-table__cell v-table__cell--vgt">
+            <div class="v-table__help-name">VGT Security</div>
+            {{ item.vgt }}
+          </div>
+          <div class="v-table__cell v-table__cell--vgu">
+            <div class="v-table__help-name">VGU Utility</div>
+            {{ item.vgu }}
+          </div>
         </div>
       </div>
     </section>
@@ -455,9 +462,9 @@ export default {
     },
     errorMessage() {
       if (this.ethAccount) {
-        return `Current address ${this.ethAccount} is not in the V12 voting list.`
+        return `Current address ${this.ethAccount} is not in the Vault12 voting list.`
       }
-      return `Please install metamask or use TrustWallet`
+      return `Please install MetaMask to vote!`
     },
     canVote() {
       return this.ethAccount && this.isUserInVotingList && this.decision === 'Not Voted'

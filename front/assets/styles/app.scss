@@ -35,12 +35,22 @@ $footer-padding: 1.5rem;
   text-overflow: ellipsis;
 }
 
+// Custom CSS styling
+
+.notices .snackbar p {
+  font-size: 32px;
+}
+
+// End custom CSS
+
 html {
   padding-top: 92px;
 
   @include tablet {
     padding-top: 112px;
   }
+
+  font-size: 22px;
 }
 
 .wrapper {
