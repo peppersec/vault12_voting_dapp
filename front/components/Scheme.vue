@@ -489,7 +489,7 @@
         20% Split
       </text>
       <text x="154" y="473" fill="#053188" font-family="IBM Plex Sans" font-size="14">
-        <tspan dy="-54">Weekly ETH</tspan>
+        <tspan dy="-54">Monthly ETH</tspan>
         <tspan x="154" dy="1.286em">Balance</tspan>
         <tspan x="154" dy="1.286em">Distribution to</tspan>
         <tspan x="154" dy="1.286em">VGT Owners</tspan>

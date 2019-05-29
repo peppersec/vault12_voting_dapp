@@ -37,7 +37,7 @@
             <div class="voting-line bottom"></div>
             <div class="voting-item">
               <div class="voting-label">
-                To sumbit votes:
+                To submit votes:
               </div>
               <div class="voting-value">
                 {{ `${duration.days}:${duration.hours}:${duration.minutes}:${duration.seconds}` }}
@@ -61,7 +61,7 @@
             No Change
           </h4>
           <p>
-            This vote means the community prefers to keep VGT token to the exact policy described in
+            This vote means the community prefers to keep VGT tokens to the exact policy described in
             our white paper
           </p>
           <b-button
@@ -193,7 +193,7 @@
         </div>
         <div class="column">
           <h2 class="title">
-            No change
+            No Change
           </h2>
           <h3 class="subtitle">
             This vote means the community prefers to keep VGT tokens to the exact policy described in
@@ -292,7 +292,7 @@
           </p>
           <p>
             Instead, we can make the platform accept widely available Ethereum (and other
-            cryptocurrencies at a later date) and keep the original VGT token as registration of
+            cryptocurrencies at a later date) and keep the original VGT token as a registration of
             commercial rights on the platform. This way millions of Ethereum users can immediately
             use the Vault12 platform with no extra steps such as buying tokens on exchanges. At the same
             time, VGT tokens become valuable since ownership entitles holders to automatically
