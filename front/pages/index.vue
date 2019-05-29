@@ -8,7 +8,10 @@
             It has been well over a year since we published the Vault12 white paper and shared our
             vision of a distributed secretkeeping platform to secure our most valuable crypto assets
             and most critical documents. Security tokens were in their infancy, and there was little
-            guidance on how security tokens could operate in distributed software platforms.
+            guidance on how security tokens could operate in distributed software platforms. 
+            <a alt="Link to Vote Announcement Post" target="_blank" href="https://medium.com/vault12/policy-proposal-vote-for-vault12-token-strategy-f015eac66ca4">
+              Read our full announcement regarding this vote.
+            </a>
           </p>
           <b-button
             v-scroll-to="'.vote'"
