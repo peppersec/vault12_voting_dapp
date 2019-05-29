@@ -8,7 +8,7 @@ const networkConfig = {
     },
     networkName: 'Ethereum Mainnet',
     rpcUrl: 'https://ethereum-rpc.trustwalletapp.com',
-    votingContractAddress: '0xb2eca9cbc5c14b6890351dcaa9345e91cdabad3a',
+    votingContractAddress: '0x908d81a4961c4a40b38c91f16d216c6307a89954',
     smartContractPollTime: 15,
     gasOracleUrls: [
       'https://www.etherchain.org/api/gasPriceOracle',
@@ -16,8 +16,8 @@ const networkConfig = {
     ],
     tokenDecimals: 18,
     tokenSymbol: 'VGT',
-    deployedBlockNumber: 7811592,
-    snapshotBlock: 7811556
+    deployedBlockNumber: 7851115,
+    snapshotBlock: 7850817
   },
   netId42: {
     rpcCallRetryAttempt: 15,
