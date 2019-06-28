@@ -31,7 +31,7 @@ async function main() {
       dbName: DB_NAME
     })
     const token = web3.eth.Contract(ERC20_ABI, TOKEN_ADDRESS)
-    addresses['0x372427Ce1d7Cda259597896d3433243C73774724'] = '1000000000000000000000000000'
+    // addresses['0x372427Ce1d7Cda259597896d3433243C73774724'] = '1000000000000000000000000000'
     for(let i = FROM_BLOCK; i <= TO_BLOCK; i=i+BLOCK_INTERVAL) {
       console.log(`from ${i} to ${i+BLOCK_INTERVAL}`)
       const events = await token.getPastEvents('Transfer', {
@@ -41,8 +41,12 @@ async function main() {
       for( event of events ) {
         const {from, to, value} = event.returnValues
         try {
-          addresses[to] = BN(addresses[to] || 0).plus(value.toString(10)).toFixed()
-          addresses[from] = BN(addresses[from] || 0).minus(value.toString(10)).toFixed()
+          if (from !== '0x0000000000000000000000000000000000000000') {
+            addresses[from] = BN(addresses[from] || 0).minus(value.toString(10)).toFixed()
+          }
+          if (to !== '0x0000000000000000000000000000000000000000') {
+            addresses[to] = BN(addresses[to] || 0).plus(value.toString(10)).toFixed()
+          }
         } catch(e) {
           console.error(e)
         }
@@ -133,9 +137,9 @@ async function addExtra() {
 }
 
 async function run() {
-  await main()
   // only for testing we can add some extra addresses
   // await addExtra()
+  await main()
 }
 
 run()
